@@ -1,9 +1,9 @@
 from django.shortcuts import render
-import cgi,cgitb
-form = cgi.FieldStorage()
+
+
 from .models import contact
 from .models import user_details
-import pdfkit as pdf
+
 # Create your views here.
 name = ''
 
@@ -65,13 +65,7 @@ def adulttest(request):
     else:
         return render(request,'adult-test.html')
 
-#def report():
-    #if a >= 0 and a <= 10:
-        #print('no adhd')
-    #elif a > 10 and a <= 15:
-        #print('mild adhd')
-    #elif a > 15 and a <= 42:
-        #print('severe adhd')
+
 
 def adultdetails(request):
 
