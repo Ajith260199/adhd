@@ -11,3 +11,4 @@ class user_details:
     id : int
     name : str
     score : int
+
